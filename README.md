@@ -7,7 +7,7 @@ This code accompanies the paper ''CTRU: Compact and Efficient NTRU-based KEM  wi
 See CTRU-codes-ref.
 
 
-## The security and error prabability
+## The security and error probability
 See CTRU-security&error.
 
 ## The refined gate-count estimate
