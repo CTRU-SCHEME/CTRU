@@ -8,7 +8,7 @@ See CTRU-codes-ref.
 
 The target parameter set is ($n=768,q=3457,q_2=2^{10},\Psi=B_2$).
 
-Run the codes:
+Run the portable C codes:
 
 ```
 cd CTRU-codes-ref
