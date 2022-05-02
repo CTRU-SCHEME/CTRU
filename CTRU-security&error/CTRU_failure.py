@@ -4,7 +4,6 @@ from math import factorial as fac
 from proba_util import *
 
 
-''' Calculate qs/2 in v and the error after decompression'''
 def build_rounding_law_message(ps):
     D = {}
     for k1 in range(0, ps.p):    
@@ -14,7 +13,6 @@ def build_rounding_law_message(ps):
     return D   
         
 
-''' Calculate v and the error after decompression  '''
 def build_rounding_law_ciphertext(ps):
     D = {}
     for sigma1 in range(0, ps.q1):

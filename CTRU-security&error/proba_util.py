@@ -106,33 +106,6 @@ def build_mod_switching_error_law(q, rq):
     return D
 
 
-def law_mul_p(A, p):
-    """ 
-    : 计算 A 的每个数值乘上 p
-    :param A: first input law (dictionnary)
-    :param p: second input
-    """
-
-    C = {}
-    for a in A:
-            c = p * a
-            C[c] = C.get(c, 0) + A[a]
-    return C
-
-def law_add_p(A, p):
-    """ 
-    : 计算 A 的每个数值加上 p
-    :param A: first input law (dictionnary)
-    :param p: second input
-    """
-
-    C = {}
-    for a in A:
-            c = p + a
-            C[c] = C.get(c, 0) + A[a]
-    return C
-
-
 def law_convolution(A, B):
     """ Construct the convolution of two laws (sum of independent variables from two input laws)
     :param A: first input law (dictionnary)
