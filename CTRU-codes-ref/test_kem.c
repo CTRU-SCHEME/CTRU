@@ -30,9 +30,9 @@ void test_kem()
   printf("CTRU-%d-KEM is correct!\n", CTRU_N);
 
   printf("Test %d times.\n\n", NTESTS);
-  printf("CTRU_N = %d, CTRU_Q1 = %d, CTRU_Q2 = %d\n", CTRU_N, CTRU_Q1, CTRU_Q2);
-  printf("KEM size: pk = %d bytes, ct = %d bytes, sk = %d bytes\n\n",
-         CTRU_KEM_PUBLICKEYBYTES, CTRU_KEM_CIPHERTEXTBYTES, CTRU_KEM_SECRETKEYBYTES);
+  printf("CTRU_N = %d, CTRU_Q = %d, CTRU_Q2 = %d\n", CTRU_N, CTRU_Q, CTRU_Q2);
+  printf("KEM size: pk = %d bytes, ct = %d bytes\n\n",
+         CTRU_KEM_PUBLICKEYBYTES, CTRU_KEM_CIPHERTEXTBYTES);
 }
 
 int main()

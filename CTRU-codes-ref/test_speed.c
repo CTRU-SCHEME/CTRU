@@ -18,7 +18,7 @@ void test_speed_kem()
 {
   printf("\n");
 
-  printf("CTRU-%d-%d-KEM\n\n", CTRU_N, CTRU_Q1);
+  printf("CTRU-%d-%d-KEM\n\n", CTRU_N, CTRU_Q);
 
   unsigned int i;
   unsigned char pk[CTRU_KEM_PUBLICKEYBYTES], sk[CTRU_KEM_SECRETKEYBYTES], ct[CTRU_KEM_CIPHERTEXTBYTES];

@@ -57,7 +57,7 @@ void invntt_256(int16_t b[CTRU_NTT_N], const int16_t a[CTRU_NTT_N])
 {
   unsigned int start, len, j, k;
   int16_t t, zeta;
-  const int16_t n1 = (1U << 25) % CTRU_Q1, n2 = (1U << 26) % CTRU_Q1;
+  const int16_t n1 = (1U << 25) % CTRU_Q, n2 = (1U << 26) % CTRU_Q;
 
   for (j = 0; j < 256; ++j)
     b[j] = a[j];

@@ -9,7 +9,7 @@ int16_t montgomery_reduce(int32_t a)
   int16_t u;
 
   u = a * QINV;
-  t = (int32_t)u * CTRU_Q1;
+  t = (int32_t)u * CTRU_Q;
   t = a - t;
   t >>= 16;
   return t;
@@ -21,15 +21,15 @@ int16_t barrett_reduce(int16_t a)
 
   t = v * a;
   t >>= 26;
-  t *= CTRU_Q1;
+  t *= CTRU_Q;
   return a - t;
 }
 
 int16_t fqcsubq(int16_t a)
 {
-  a += (a >> 15) & CTRU_Q1;
-  a -= CTRU_Q1;
-  a += (a >> 15) & CTRU_Q1;
+  a += (a >> 15) & CTRU_Q;
+  a -= CTRU_Q;
+  a += (a >> 15) & CTRU_Q;
   return a;
 }
 
@@ -60,7 +60,7 @@ int16_t fquniform()
   {
     randombytes((unsigned char *)&r, 2);
     r &= 0xFFF;
-  } while (r >= CTRU_Q1);
+  } while (r >= CTRU_Q);
 
   return r;
 }

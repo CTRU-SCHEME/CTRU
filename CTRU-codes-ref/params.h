@@ -5,8 +5,8 @@
 #define CTRU_ALPHA 3
 #endif
 
-#define CTRU_Q1 3457
-#define CTRU_LOGQ1 12
+#define CTRU_Q 3457
+#define CTRU_LOGQ 12
 #define CTRU_Q2 1024  /* Change this for the ciphertext modulus */
 #define CTRU_LOGQ2 10 /* Change this for the ciphertext modulus */
 
@@ -18,7 +18,7 @@
 #define CTRU_SHAREDKEYBYTES 32
 #define CTRU_MSGBYTES (CTRU_N / 16)
 
-#define CTRU_PKE_PUBLICKEYBYTES (CTRU_LOGQ1 * CTRU_N / 8)
+#define CTRU_PKE_PUBLICKEYBYTES (CTRU_LOGQ * CTRU_N / 8)
 #define CTRU_PKE_CIPHERTEXTBYTES (CTRU_LOGQ2 * CTRU_N / 8)
 #define CTRU_PKE_SECRETKEYBYTES (4 * CTRU_N / 8)
 

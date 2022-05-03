@@ -34,7 +34,7 @@ void poly_double(poly *b, const poly *a)
 
 void poly_tomont(poly *a)
 {
-  const int16_t t = (MONT * MONT) % CTRU_Q1;
+  const int16_t t = (MONT * MONT) % CTRU_Q;
   for (int i = 0; i < CTRU_N; ++i)
     a->coeffs[i] = fqmul(a->coeffs[i], t);
 }
@@ -140,7 +140,7 @@ void poly_combine(poly *b, const poly *a)
   }
 }
 
-#if (CTRU_Q2 != CTRU_Q1)
+#if (CTRU_Q2 != CTRU_Q)
 #define N CTRU_N
 
 static void poly_naivemul_q2(poly *c, const poly *a, const poly *b, const int Q)
@@ -194,7 +194,7 @@ void poly_encode_compress(poly *c,
     for (j = 0; j < 8; j++)
     {
       mask = -(int16_t)((mh[i] >> j) & 1);
-      t = ((((int32_t)sigma->coeffs[8 * i + j] + (mask & ((CTRU_Q1 + 1) >> 1))) << CTRU_LOGQ2) + (CTRU_Q1 >> 1)) / CTRU_Q1;
+      t = ((((int32_t)sigma->coeffs[8 * i + j] + (mask & ((CTRU_Q + 1) >> 1))) << CTRU_LOGQ2) + (CTRU_Q >> 1)) / CTRU_Q;
       c->coeffs[8 * i + j] = t & (CTRU_Q2 - 1);
     }
   }
