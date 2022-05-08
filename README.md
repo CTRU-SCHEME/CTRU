@@ -1,7 +1,5 @@
 # CTRU
 
-These codes accompany the paper ''CTRU: Compact and Efficient NTRU-based KEM  with Scalable Ciphertext Compression''.
-
 
 ## The portable C implementation
 See CTRU-codes-ref. 
