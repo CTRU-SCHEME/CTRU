@@ -38,7 +38,7 @@ The refined gate-count estimate is  developed from the scripts provided by Kyber
 ## Test other schemes
 See Other-schemes-speed.
 
-The codes of Kyber, Saber, NTRU-HRSS and SNTRU Prime are taken from https://csrc.nist.gov/projects/post-quantum-cryptography/round-3-submissions.
+The codes of Kyber, Saber, NTRU-HRSS and SNTRU Prime are taken from https://csrc.nist.gov/projects/post-quantum-cryptography/round-3-submissions. The FO transformations of Kyber and Saber are changed into those as in https://eprint.iacr.org/2021/1351.
 
 The codes of NTTRU are taken from https://eprint.iacr.org/2019/040 and https://github.com/gregorseiler/NTTRU.
 
