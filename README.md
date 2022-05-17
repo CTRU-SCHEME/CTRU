@@ -22,8 +22,30 @@ They are gotten by the same methodology and scripts provided by Kyber and NTRU i
 
 The test codes are given in CTRU-security&error/CTRU.py
 
+Run the codes in CTRU-security&error:
+
+```
+python3 CTRU.py
+```
+
 
 ## The refined gate-count estimate
 See CTRU-gate-count. 
 
 The refined gate-count estimate is  developed from the scripts provided by Kyber and NTRU Prime in NIST PQC Round 3 (see https://github.com/lducas/leaky-LWE-Estimator/tree/NIST-round3  for details) and the paper ''Dana Dachman-Soled, Léo Ducas, Huijing Gong, Mélissa Rossi: LWE with Side Information: Attacks and Concrete Security Estimation. CRYPTO (2) 2020: 329-358'' (see https://eprint.iacr.org/2020/292.pdf).
+
+
+## Test other schemes
+See Other-schemes-speed.
+
+The codes of Kyber, Saber, NTRU-HRSS and SNTRU Prime are taken feom https://csrc.nist.gov/projects/post-quantum-cryptography/round-3-submissions.
+
+The codes of NTTRU are taken from https://eprint.iacr.org/2019/040 and https://github.com/gregorseiler/NTTRU.
+
+Run the codes :
+```
+cd Other-schemes-speed
+./run.sh
+```
+
+
